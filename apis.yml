@@ -1,23 +1,72 @@
 aid: terray-therapeutics
 name: Terray Therapeutics
-description: 'Terray Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Terray Therapeutics is an AI-native, chemistry-first biotechnology company
+  building an integrated full-stack platform for small molecule drug discovery. Its
+  EMMI platform (Experimentation Meets Machine Intelligence) pairs a proprietary ultra-miniaturized
+  microarray assay system and fully automated lab with a family of machine learning
+  models: COATI, a chemistry foundation model trained on roughly a billion molecules
+  that encodes molecules into a latent space; reinforcement-learning generative models
+  for synthesizable de novo design; TerraBind for potency prediction; and EMMI Select
+  for uncertainty-aware molecule selection. Terray reports a proprietary target-molecule
+  interaction dataset of more than 17 billion measurements growing by about a billion
+  per quarter, and runs multi-target discovery collaborations with Bristol Myers Squibb,
+  Gilead, Calico and Odyssey Therapeutics, with investment from NVIDIA. Terray publishes
+  several of its research code libraries as open source on GitHub (COATI, COATI-LDM,
+  TerraMax) but operates no public developer API, developer portal, or machine-readable
+  API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/terray-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
+image: https://cdn.sanity.io/images/1is8o0lz/prod/6a7bab2418ccdd5b8e62033bd052698f2bb12dae-1200x630.jpg
 tags:
 - Company
+- Biotechnology
+- Drug Discovery
+- Artificial Intelligence
+- Machine Learning
+- Chemistry
+- Life Sciences
+- Pharmaceuticals
+- Foundation Models
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 common:
 - type: Website
-  url: https://forgeglobal.com/terray-therapeutics_stock/
+  url: https://www.terraytx.ai/
+- type: Blog
+  url: https://www.terraytx.ai/news-and-research
+- type: GitHubOrganization
+  url: https://github.com/terraytherapeutics
+- type: PrivacyPolicy
+  url: https://www.terraytx.ai/privacy-policy
+- type: TermsOfService
+  url: https://www.terraytx.ai/terms-of-use
+- type: Contact
+  url: https://www.terraytx.ai/contact
+- type: Careers
+  url: https://www.terraytx.ai/careers
+- type: Team
+  url: https://www.terraytx.ai/team
+- type: Platform
+  url: https://www.terraytx.ai/emmi-platform
+- type: Packages
+  url: packages/terray-therapeutics-packages.yml
+- type: LLMsTxt
+  url: llms/terray-therapeutics-llms.txt
+- type: DomainSecurity
+  url: security/terray-therapeutics-domain-security.yml

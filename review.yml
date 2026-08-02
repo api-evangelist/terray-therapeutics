@@ -1,0 +1,52 @@
+generated: '2026-08-02'
+method: probed
+pass: local-v1
+summary: >-
+  Terray Therapeutics is an AI-native biotechnology company, not an API provider.
+  Full contract discovery was run against every known Terray host on 2026-08-02
+  and found no machine-readable API contract of any kind, no developer portal,
+  no documentation, and no authentication surface. The company's public
+  technical output is open-source research code on GitHub. This is a valid,
+  complete "no API surface" result — not a harvest failure.
+hosts_probed:
+- https://www.terraytx.ai
+- https://terraytx.com
+- https://www.terraytx.com
+- https://api.terraytx.com (DNS does not resolve)
+- https://docs.terraytx.com (DNS does not resolve)
+- https://developer.terraytx.com (DNS does not resolve)
+contract_discovery:
+- probe: REST OpenAPI on API/docs hosts
+  paths: [/openapi.json, /openapi.yaml, /swagger.json, /api-docs, /docs, /redoc]
+  result: miss
+  detail: 404 on www.terraytx.ai and terraytx.com; api./docs./developer. subdomains do not resolve.
+- probe: GraphQL introspection
+  paths: [/graphql]
+  result: miss
+  detail: 404 — no GraphQL surface exists.
+- probe: MCP tools/list
+  result: miss
+  detail: no hosted MCP server advertised in docs, registries, or on any Terray host.
+- probe: A2A agent card
+  paths: [/.well-known/agent-card.json, /.well-known/agent.json]
+  result: miss
+  detail: 404 on all hosts. Per the pipeline contract, nothing was written to a2a/.
+- probe: AsyncAPI / webhooks / event surface
+  result: miss
+  detail: no events, streaming, or webhook documentation published.
+- probe: llms.txt
+  paths: [/llms.txt]
+  result: miss
+  detail: 404 on both hosts; a generated llms.txt was authored instead.
+artifacts_not_applicable:
+- openapi/ — no spec published
+- asyncapi/ — no event surface
+- mcp/ — no MCP server, and no OpenAPI to derive candidate tools from
+- a2a/ — probe missed; search-only artifact, so nothing written
+- skills/, overlays/, errors/, conventions/, data-model/, conformance/, lifecycle/,
+  scopes/, authentication/, sandbox/, changelog/, cli/, components/, grpc/ —
+  all require an API contract or a developer surface that does not exist
+notes: >-
+  Recommended re-check trigger: Terray announcing a partner/data-access program
+  for its 17B-measurement chemistry dataset, which is the only plausible route to
+  a public or semi-public API from this company.

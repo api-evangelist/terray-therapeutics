@@ -1,0 +1,42 @@
+generated: '2026-08-02'
+method: probed
+source: live HTTP probes
+notes: >-
+  Negative result, recorded for provenance. Every /.well-known/ discovery path
+  was probed on both the canonical host (www.terraytx.ai) and the legacy host
+  (terraytx.com) on 2026-08-02 and all returned 404. No raw documents were
+  saved and no WellKnown / SecurityTxt pointer is wired in apis.yml, because
+  none of these documents exist.
+hosts:
+- host: https://www.terraytx.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://terraytx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

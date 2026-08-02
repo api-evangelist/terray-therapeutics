@@ -1,0 +1,50 @@
+# Terray Therapeutics
+
+> Terray Therapeutics is an AI-native, chemistry-first biotechnology company building an integrated
+> full-stack platform for small molecule drug discovery. Its EMMI platform (Experimentation Meets
+> Machine Intelligence) pairs a proprietary ultra-miniaturized microarray assay system and a fully
+> automated lab with a family of machine learning models — COATI (a chemistry foundation model
+> trained on ~1 billion molecules), reinforcement-learning generative models for synthesizable de
+> novo design, TerraBind for potency prediction, and EMMI Select for uncertainty-aware molecule
+> selection. Terray reports a proprietary target-molecule interaction dataset of more than 17
+> billion measurements, growing by roughly 1 billion per quarter.
+
+Terray publishes **no public developer API**, no developer portal, and no machine-readable API
+contract (no OpenAPI, AsyncAPI, GraphQL, MCP server, or A2A agent card were found on any Terray
+host as of 2026-08-02). Its public technical surface is open-source research code on GitHub.
+
+## Company
+
+- [Terray Therapeutics](https://www.terraytx.ai/): Company home — "The only integrated full-stack AI platform for small molecule drug discovery."
+- [EMMI Platform](https://www.terraytx.ai/emmi-platform): The integrated experimentation + machine intelligence platform, including COATI, TerraBind and EMMI Select.
+- [Pipeline](https://www.terraytx.ai/pipeline): Therapeutic programs.
+- [Team](https://www.terraytx.ai/team): Leadership, board and scientific advisors.
+- [Careers](https://www.terraytx.ai/careers): Open roles.
+- [Contact](https://www.terraytx.ai/contact): General contact (info@terraytx.ai).
+
+## News and research
+
+- [News & Research](https://www.terraytx.ai/news-and-research): Press releases and technical insight posts.
+- [Introducing EMMI](https://www.terraytx.ai/insights/introducing-emmi-where-experimentation-meets-machine-intelligence): Platform announcement.
+- [EMMI Predict / TerraBind](https://www.terraytx.ai/insights/emmi-predict-terrabind): Potency prediction model.
+- [EpiNets & EMAX](https://www.terraytx.ai/insights/EpiNets-EMAX-how-to-select-the-right-molecules-to-make-and-test): Molecule selection methodology.
+
+## Open source
+
+- [GitHub organization](https://github.com/terraytherapeutics): Terray Therapeutics on GitHub.
+- [COATI](https://github.com/terraytherapeutics/COATI): Multi-modal contrastive pre-training for representing and traversing chemical space (Apache-2.0, Python).
+- [COATI-LDM](https://github.com/terraytherapeutics/COATI-LDM): Latent diffusion for conditional generation of molecules (Python).
+- [TerraMax](https://github.com/terraytherapeutics/terramax): Pretrained joint predictions for scalable batch Bayesian optimization of molecular designs (Apache-2.0, Python).
+- [streamlit-ketcher (fork)](https://github.com/terraytherapeutics/streamlit-ketcher): Terray fork of the Ketcher molecule-editor Streamlit component.
+
+## Legal
+
+- [Privacy Policy](https://www.terraytx.ai/privacy-policy)
+- [Terms of Use](https://www.terraytx.ai/terms-of-use)
+
+## API Evangelist catalog
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/terray-therapeutics/refs/heads/main/apis.yml): Machine-readable catalog entry for Terray Therapeutics.
+- [Packages](https://raw.githubusercontent.com/api-evangelist/terray-therapeutics/refs/heads/main/packages/terray-therapeutics-packages.yml): First-party open-source libraries and registry probe results.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/terray-therapeutics/refs/heads/main/security/terray-therapeutics-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/terray-therapeutics/refs/heads/main/well-known/terray-therapeutics-well-known.yml): Recorded /.well-known/ discovery results (all 404).

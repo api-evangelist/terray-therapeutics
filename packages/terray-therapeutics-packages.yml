@@ -1,0 +1,85 @@
+generated: '2026-08-02'
+method: searched
+source: https://github.com/terraytherapeutics
+notes: >-
+  Terray Therapeutics publishes no public API and therefore ships no API client
+  SDKs. What it does publish are first-party open-source research code libraries
+  on GitHub, installed from source (pip install .) rather than from a package
+  registry. Probed npm, PyPI, Maven Central, NuGet, pkg.go.dev, RubyGems,
+  Packagist and crates.io on 2026-08-02: no first-party Terray package is
+  published to any of them (the PyPI project `coati` is an unrelated PowerPoint
+  reporting tool by Intelimetrica). No `type: SDKs` pointer is emitted because
+  none of these are API client libraries.
+registries_probed:
+- registry: npm
+  result: no first-party package
+- registry: pypi
+  result: no first-party package
+- registry: maven-central
+  result: no first-party package
+- registry: nuget
+  result: no first-party package
+- registry: pkg.go.dev
+  result: no first-party package
+- registry: rubygems
+  result: no first-party package
+- registry: packagist
+  result: no first-party package
+- registry: crates.io
+  result: no first-party package
+packages:
+- language: python
+  registry: github
+  name: coati
+  url: https://github.com/terraytherapeutics/COATI
+  install: pip install git+https://github.com/terraytherapeutics/COATI.git
+  license: Apache-2.0
+  official: true
+  kind: research-library
+  description: >-
+    COATI — multi-modal contrastive pre-training for representing and traversing
+    chemical space. The chemistry foundation model behind the EMMI platform.
+- language: python
+  registry: github
+  name: coatiLDM
+  url: https://github.com/terraytherapeutics/COATI-LDM
+  install: pip install git+https://github.com/terraytherapeutics/COATI-LDM.git
+  official: true
+  kind: research-library
+  description: >-
+    COATI-LDM — latent diffusion for conditional generation of molecules;
+    companion code to the bioRxiv preprint 10.1101/2024.08.22.609169.
+- language: python
+  registry: github
+  name: terramax
+  url: https://github.com/terraytherapeutics/terramax
+  install: pip install git+https://github.com/terraytherapeutics/terramax.git
+  license: Apache-2.0
+  official: true
+  kind: research-library
+  description: >-
+    TerraMax — pretrained joint predictions for scalable batch Bayesian
+    optimization of molecular designs; companion code to arXiv:2511.10590.
+- language: python
+  registry: github
+  name: streamlit-ketcher
+  url: https://github.com/terraytherapeutics/streamlit-ketcher
+  install: pip install git+https://github.com/terraytherapeutics/streamlit-ketcher.git
+  license: Apache-2.0
+  official: false
+  kind: fork
+  description: >-
+    Terray fork of the streamlit-ketcher molecule-editor component with local
+    tweaks; the upstream package is published to PyPI by its original authors.
+x-evidence:
+  fetched: '2026-08-02'
+  sources:
+  - url: https://api.github.com/orgs/terraytherapeutics/repos
+    http_status: 200
+  - url: https://pypi.org/pypi/coati/json
+    http_status: 200
+    note: unrelated project (Intelimetrica PowerPoint tool)
+  - url: https://pypi.org/pypi/terramax/json
+    http_status: 404
+  - url: https://registry.npmjs.org/terray
+    http_status: 404
