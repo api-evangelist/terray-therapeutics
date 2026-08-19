@@ -19,7 +19,7 @@ x-type: company
 x-source: harvest:secondary-market
 x-tier: profiled
 x-tier-reason: enrichment-pipeline
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-02'
 modified: '2026-08-02'
 image: https://cdn.sanity.io/images/1is8o0lz/prod/6a7bab2418ccdd5b8e62033bd052698f2bb12dae-1200x630.jpg
