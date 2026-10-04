@@ -51,12 +51,12 @@ tags:
 - Biotechnology
 - Drug Discovery
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Chemistry
 - Life Sciences
 - Pharmaceuticals
 - Foundation Models
-- Open-Source
+- Open Source
 tags_raw:
 - Company
 - Biotechnology
@@ -68,6 +68,8 @@ tags_raw:
 - Pharmaceuticals
 - Foundation Models
 - Open Source
+- Machine-Learning
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
